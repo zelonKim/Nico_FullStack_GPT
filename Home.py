@@ -92,16 +92,3 @@ st.write(PromptTemplate)
 
 p = PromptTemplate.from_template("aaa")
 st.write(p)
-
-
-###############
-
-
-with st.status("Embedding file...", expanded=True) as status:
-    time.sleep(2)
-    st.write("Getting the file")
-    time.sleep(2)
-    st.write("Embedding the file")
-    time.sleep(2)
-    st.write("Caching the file")
-    status.update(label="Error", state="error")
